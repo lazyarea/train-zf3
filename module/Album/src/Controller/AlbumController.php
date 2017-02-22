@@ -48,7 +48,7 @@ class AlbumController extends AbstractActionController
 
     public function editAction()
     {
-        
+
     }
 
     public function deleteAction()

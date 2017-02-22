@@ -19,4 +19,9 @@ return [
         'username' => 'zftutorial',
         'password' => 'zftutorial',
     ],
+    'service_manager' => [
+        'factories' => [
+            'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
+        ],
+    ],
 ];
