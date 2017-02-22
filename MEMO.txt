@@ -1,0 +1,15 @@
+# MEMO
+
+#### ServiceManager
+  module/Album/src/Module.php
+  ```
+  class Module implements ConfigProviderInterface
+  {
+    public function ...
+
+    public function getServiceConfig()
+    {
+      ...
+    }
+  }
+  ```
