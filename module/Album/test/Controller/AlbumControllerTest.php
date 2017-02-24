@@ -21,7 +21,7 @@ class AlbumControllerTest extends AbstractHttpControllerTestCase
     public function testIndexAction()
     {
         $this->dispatch('/album');
-        // $this->assertResponseStatusCode(200);
+        $this->assertResponseStatusCode(200);
         $this->assertModuleName('album');
         $this->assertControllerName(AlbumController::class); // as specified in router's controller name alias
         $this->assertControllerClass('AlbumController');

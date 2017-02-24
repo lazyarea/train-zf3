@@ -27,6 +27,20 @@ return [
                     ],
                 ],
             ],
+            'album2' => [ // assertMatchedRouteName
+                'type'    => Segment::class,
+                'options' => [
+                    'route' => '/album/album2[/:action[/:id]]',
+                    'constraints' => [
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id'     => '[0-9]+',
+                    ],
+                    'defaults' => [
+                        'controller' => Controller\AlbumController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
         ],
     ],
     'view_manager' => [
