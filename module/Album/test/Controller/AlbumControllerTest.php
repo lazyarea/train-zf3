@@ -32,7 +32,6 @@ class AlbumControllerTest extends AbstractHttpControllerTestCase
     {
         $this->dispatch('/album/add');
         $this->assertControllerClass('AlbumController');
-        // $this->assertResponseStatusCode(200);
         $this->assertMatchedRouteName('album');
     }
 

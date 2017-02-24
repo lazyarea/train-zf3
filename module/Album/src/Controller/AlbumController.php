@@ -50,7 +50,7 @@ class AlbumController extends AbstractActionController
     {
         $id = (int) $this->params()->fromRoute('id', 0);
         // print $id;
-        
+
     }
 
     public function deleteAction()
