@@ -13,7 +13,7 @@ return [
     // The following section is new and should be added to your file:
     'router' => [
         'routes' => [
-            'album' => [
+            'album' => [ // assertMatchedRouteName
                 'type'    => Segment::class,
                 'options' => [
                     'route' => '/album[/:action[/:id]]',

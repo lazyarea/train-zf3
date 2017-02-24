@@ -48,7 +48,9 @@ class AlbumController extends AbstractActionController
 
     public function editAction()
     {
-
+        $id = (int) $this->params()->fromRoute('id', 0);
+        // print $id;
+        
     }
 
     public function deleteAction()
